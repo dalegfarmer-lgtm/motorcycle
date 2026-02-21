@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RevMax | Premium Motorcycle Gear & Accessories</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Lexend:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">REV<span>MAX</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gear">Gear</a></li>
+                <li><a href="#clothing">Clothing</a></li>
+                <li><a href="#accessories">Accessories</a></li>
+            </ul>
+            <div class="cart-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="9" cy="21" r="1" />
+                    <circle cx="20" cy="21" r="1" />
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+                </svg>
+                <span id="cart-count">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <div class="corner-mascot">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 120">
+            <style>
+                .wheel {
+                    animation: spin 0.6s linear infinite;
+                }
+
+                .body {
+                    animation: rumble 0.08s linear infinite alternate, cruise 2s ease-in-out infinite alternate;
+                }
+
+                .exhaust-smoke {
+                    animation: smoke 0.8s linear infinite;
+                }
+
+                @keyframes spin {
+                    from {
+                        transform: rotate(0deg);
+                    }
+
+                    to {
+                        transform: rotate(360deg);
+                    }
+                }
+
+                @keyframes rumble {
+                    from {
+                        transform: translateY(0px);
+                    }
+
+                    to {
+                        transform: translateY(0.5px);
+                    }
+                }
+
+                @keyframes cruise {
+                    from {
+                        transform: rotate(-0.5deg);
+                    }
+
+                    to {
+                        transform: rotate(0.5deg);
+                    }
+                }
+
+                @keyframes smoke {
+                    0% {
+                        opacity: 0.8;
+                        transform: translate(0, 0) scale(1);
+                    }
+
+                    100% {
+                        opacity: 0;
+                        transform: translate(-15px, -5px) scale(2.5);
+                    }
+                }
+            </style>
+
+            <circle class="exhaust-smoke" cx="25" cy="85" r="3" fill="#cccccc" />
+
+            <g class="body">
+                <path d="M 45 75 L 80 45 L 120 45 L 140 75" fill="none" stroke="#222222" stroke-width="6"
+                    stroke-linecap="round" stroke-linejoin="round" />
+
+                <path d="M 75 45 Q 100 32 122 46 L 80 46 Z" fill="#dfff00" />
+
+                <rect x="50" y="42" width="28" height="6" rx="3" fill="#111111" />
+
+                <line x1="120" y1="45" x2="150" y2="90" stroke="#444444" stroke-width="4" stroke-linecap="round" />
+
+                <path d="M 120 45 L 115 30 L 125 25" fill="none" stroke="#222222" stroke-width="4"
+                    stroke-linecap="round" stroke-linejoin="round" />
+
+                <circle cx="132" cy="55" r="5" fill="#ffffff" stroke="#222222" stroke-width="2" />
+
+                <rect x="80" y="55" width="25" height="20" rx="3" fill="#555555" />
+                <line x1="80" y1="60" x2="105" y2="60" stroke="#333333" stroke-width="2" />
+                <line x1="80" y1="65" x2="105" y2="65" stroke="#333333" stroke-width="2" />
+                <line x1="80" y1="70" x2="105" y2="70" stroke="#333333" stroke-width="2" />
+            </g>
+
+            <g class="wheel" style="transform-origin: 45px 90px;">
+                <circle cx="45" cy="90" r="18" fill="none" stroke="#222222" stroke-width="6" />
+                <circle cx="45" cy="90" r="14" fill="none" stroke="#555555" stroke-width="2" />
+                <line x1="45" y1="72" x2="45" y2="108" stroke="#777777" stroke-width="2" />
+                <line x1="27" y1="90" x2="63" y2="90" stroke="#777777" stroke-width="2" />
+                <line x1="32" y1="77" x2="58" y2="103" stroke="#777777" stroke-width="2" />
+                <line x1="32" y1="103" x2="58" y2="77" stroke="#777777" stroke-width="2" />
+                <circle cx="45" cy="90" r="4" fill="#222222" />
+            </g>
+
+            <g class="wheel" style="transform-origin: 150px 90px;">
+                <circle cx="150" cy="90" r="18" fill="none" stroke="#222222" stroke-width="6" />
+                <circle cx="150" cy="90" r="14" fill="none" stroke="#555555" stroke-width="2" />
+                <line x1="150" y1="72" x2="150" y2="108" stroke="#777777" stroke-width="2" />
+                <line x1="132" y1="90" x2="168" y2="90" stroke="#777777" stroke-width="2" />
+                <line x1="137" y1="77" x2="163" y2="103" stroke="#777777" stroke-width="2" />
+                <line x1="137" y1="103" x2="163" y2="77" stroke="#777777" stroke-width="2" />
+                <circle cx="150" cy="90" r="4" fill="#222222" />
+            </g>
+        </svg>
+    </div>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content container">
+                <h1>ENGINEERED FOR <br><span class="highlight">THE RIDE</span></h1>
+                <p>Premium protection, uncompromising style. Gear up with the best in the industry.</p>
+                <div class="hero-btns">
+                    <a href="#gear" class="btn btn-primary">Shop Gear</a>
+                    <a href="#clothing" class="btn btn-secondary">View Clothing</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="categories" class="container reveal">
+            <div class="section-header reveal">
+                <h2>Browse Categories</h2>
+                <div class="line"></div>
+            </div>
+            <div class="category-grid">
+                <div class="category-card reveal"
+                    style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1614165933355-6df3d875373a?q=80&w=800&auto=format&fit=crop');">
+                    <h3>HELMETS</h3>
+                    <p>Advanced protection for every ride.</p>
+                </div>
+                <div class="category-card reveal reveal-delay-1"
+                    style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1558981359-219d6364c9c8?q=80&w=800&auto=format&fit=crop');">
+                    <h3>JACKETS</h3>
+                    <p>Durable, aerodynamic, and sleek.</p>
+                </div>
+                <div class="category-card reveal reveal-delay-2"
+                    style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1599812182397-3206a0a55f75?q=80&w=800&auto=format&fit=crop');">
+                    <h3>GLOVES</h3>
+                    <p>Precision control and comfort.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="gear" class="featured-products container reveal">
+            <div class="section-header reveal">
+                <h2>Featured Equipment</h2>
+                <div class="line"></div>
+            </div>
+            <div class="product-grid">
+                <div class="product-card reveal">
+                    <div class="product-img">
+                        <img src="Assets/Carbon Helmet.png" alt="Apex Carbon Helmet">
+                    </div>
+                    <div class="product-info">
+                        <h4>Apex Carbon Helmet</h4>
+                        <p class="price">$599.99</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card reveal reveal-delay-1">
+                    <div class="product-img">
+                        <img src="Assets/Mesh Jacket.png" alt="Phantom Mesh Jacket">
+                    </div>
+                    <div class="product-info">
+                        <h4>Phantom Mesh Jacket</h4>
+                        <p class="price">$349.99</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card reveal reveal-delay-2">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&w=800&auto=format&fit=crop"
+                            alt="Stinger Race Gloves">
+                    </div>
+                    <div class="product-info">
+                        <h4>Stinger Race Gloves</h4>
+                        <p class="price">$129.99</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card reveal reveal-delay-3">
+                    <div class="product-img">
+                        <img src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?q=80&w=800&auto=format&fit=crop"
+                            alt="Torque Pro Boots">
+                    </div>
+                    <div class="product-info">
+                        <h4>Torque Pro Boots</h4>
+                        <p class="price">$279.99</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <div class="logo">REV<span>MAX</span></div>
+                <p>Premium motorcycle gear for the modern rider.</p>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 REVMAX Performance. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
